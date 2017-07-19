@@ -1,4 +1,6 @@
 import random
+roll_again = "y"
+
 Roll = random.randint(1, 6)
 if Roll == 1:
     print("number is",Roll)
@@ -12,4 +14,11 @@ if Roll == 1:
          print("number is",Roll)
     else:
          print("number is",Roll)
+
+while roll_again == "y":
+	print "Rolling the dices..."
+        print "The values are...."
+	print random.randint(1, 6)
+
+	roll_again = raw_input("Roll the dices again?")
 
